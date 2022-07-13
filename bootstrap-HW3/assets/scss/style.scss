@@ -1,0 +1,264 @@
+@import "bootstrapScss/functions";
+@import "bootstrapScss/variables";
+@import "bootstrapScss/mixins";
+@import "bootstrapScss/utilities";
+
+// =================== 變數 ===================
+
+$section-text-area-width: 350px;
+$hover-color: $green-400;
+
+
+html{
+  font-size: 14px;
+  @media screen and (min-width:992px) {
+    font-size: 19px;
+  }
+}
+
+// =================== 模組化 ===================
+// font
+@mixin sloganfont($fs:2.5rem, $lh: 1.09) {
+  font-family: 'Playfair Display',
+  serif;
+  font-weight: 900;
+  font-size: $fs;
+  line-height: $lh;
+}
+.slogan-1{
+  @include sloganfont($lh:1.2);
+}
+.slogan-2 {
+  @include sloganfont($fs:2rem, $lh:1.38);
+  @media screen and (min-width:768px) {
+    @include sloganfont($lh:1.09);
+  }
+}
+.slogan-3{
+  @include sloganfont($fs:4rem,$lh:1.14);
+}
+.fw-800 {
+  font-weight: 800;
+}
+.fw-900{
+  font-weight: 900;
+}
+
+// 按鈕
+.btn{
+  &.btn-primary {
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &.btn-outline-primary {
+    background-color: #fff;
+    border-width: 3px;
+    &:hover {
+      color: $hover-color;
+      border-color: $hover-color;
+    }
+  }
+}
+// width
+.mxw-300px{
+  max-width: 300px;
+}
+@media screen and (min-width:768px) {
+  .w-md-auto{
+    width: auto!important;
+  }
+  .w-md-33 {
+    width: 33%!important;
+  }
+}
+
+//a
+@mixin anolink() {
+  text-decoration: none;
+  color: #000;
+  &:hover{
+    color: $hover-color;
+  }
+}
+
+.md-view {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.object-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mask{
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+  &:hover{
+    background: linear-gradient(0deg, #000000 -40.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+  }
+}
+
+
+
+
+body{
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  background: #fff;
+}
+
+// ========================= header =========================
+.header{
+  font-weight: 800;
+  .header-content{
+    @media screen and (min-width:992px) {
+      max-width: 1600px;
+    }
+    
+  }
+  li{
+    border-bottom: 5px solid $primary;
+    margin-left: .5rem;
+  }
+  a{
+    @include anolink()
+  }
+  
+}
+.logo {
+  &:hover {
+    color: #000;
+    cursor: pointer;
+  }
+
+  img {
+    width: 4.5rem;
+
+    @media screen and (min-width:992px) {
+      width: 6.5rem;
+    }
+  }
+
+  h4 {
+    font-weight: 900;
+
+    &:hover {
+      color: #000;
+    }
+  }
+  
+}
+
+main{
+  // header的高度
+  &::before {
+    content: "";
+    display: block;
+    height: 4.2rem;
+
+    @media screen and (min-width:992px) {
+      height: 6rem;
+    }
+  }
+}
+// ========================= section-1 =========================
+.section-1{
+  background: #fff url(../img/bg/section1-bg.svg) center center no-repeat;
+  background-size: cover;
+  min-height: 28rem;
+  @media screen and (min-width:768px) {
+    min-height: unset;
+  }
+}
+// 最上方圖片
+.section-1-img{
+  width: 100%;
+  @media screen and (min-width:768px) {
+    width: 60%;
+  }
+  h1{
+    width: 19.68rem;
+    top:22%;
+    left: 42%;
+    @media screen and (min-width:768px) {
+      width: 100%;
+      top:35%;
+      left: -20%;
+      max-width: $section-text-area-width;
+    }
+  }
+  .text-area{
+    max-width: $section-text-area-width;
+    p{
+      font-size: 1.2rem;
+    }
+    @media screen and (min-width:768px) {
+      transform: translate(-50%, -50%);
+      top:70%;
+      left: -20%;
+    }
+    @media screen and (min-width:992px) {
+      top:70%;
+    }
+    button {
+      font-weight: 900;
+      width: 45%;
+    }
+  }
+  @media screen and (min-width:992px) {
+    $section-text-area-width: 500px;
+    .slogan-1,
+    .text-area {
+      max-width: $section-text-area-width;
+    }
+  }
+  
+}
+
+// ========================= section-2 =========================
+.section-2 {
+  background: #fff url(../img/bg/section2-bg_m.svg) center center no-repeat;
+  background-size: cover;
+  @media screen and (min-width:768px) {
+    background: #fff url(../img/bg/section2-bg.svg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+// ========================= footer =========================
+.footer{
+  // 導覽處
+  .logo {
+    img {
+      width: 3.5rem;
+  
+      @media screen and (min-width:992px) {
+        width: 5rem;
+      }
+    }
+  }
+  font-weight: 700;
+  .logo{
+    margin-left: -.5rem;
+  }
+  a{
+    @include anolink();
+    white-space: nowrap;
+    padding-right: .4rem;
+    
+  }
+  // copy
+  .footer-right{
+    font-size: .8rem;
+  }
+}

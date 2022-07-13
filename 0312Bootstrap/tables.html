@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tables</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        thead{
+            white-space: nowrap;
+            /* 不會換行方法1 */
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <table class="table table-primary table-striped table-bordered border-primary caption-top">
+            <!-- striped兩個顏色、border分隔線、primary顏色決定、border-primary邊框顏色決定 、caption-top欄位說明-->
+            <caption>基本資料</caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>電話</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joe</td>
+                    <td>09xxxxxxxx</td>
+                    <td>joe@test.com</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>09xxxxxxxx</td>
+                    <td>joe@test.com</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>09xxxxxxxx</td>
+                    <td>joe@test.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="table-responsive">
+            <!-- 防爆版，出現卷軸 -->
+            <table class="table table-primary table-striped table-bordered border-primary caption-top">
+                <!-- striped兩個顏色、border分隔線、primary顏色決定、border-primary邊框顏色決定 、caption-top欄位說明-->
+                <!-- <caption>基本資料</caption> -->
+                <thead class="text-nowrap">
+                    <!-- 不會換行方法2 -->
+                    <tr>
+                        <th width="100px">姓名</th>
+                        <th>電話</th>
+                        <th>email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Joe</td>
+                        <td>09xxxxxxxx</td>
+                        <td>joe@test.comjoe@test.comjoe@test.comjoe@test.comjoe@test.comcomjoe@test.com</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>09xxxxxxxx</td>
+                        <td>joe@test.com</td>
+                    </tr>
+                    <tr>
+                        <td>Joe</td>
+                        <td>09xxxxxxxx</td>
+                        <td>joe@test.com</td>
+                    </tr>
+                </tbody>
+        </div> 
+        </table>
+      </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

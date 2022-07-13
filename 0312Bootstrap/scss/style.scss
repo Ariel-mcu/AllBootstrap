@@ -1,0 +1,17 @@
+$primary:lightblue;
+// :root{
+//     --primary: lightblue;
+// }
+.primary{
+    color: $primary;
+}
+.box{
+    h2{
+        color: red;
+        &:hover{
+            // &代表h2
+            color: pink;
+        }
+    }
+    
+}

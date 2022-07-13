@@ -1,0 +1,18 @@
+$primary: rgb(39, 207, 123);
+// :root{
+//     --primary: rgb(39, 146, 207);
+// }
+
+.primary{
+    color: $primary;
+}
+.box{
+    h2{
+        color: red;
+        &:hover{
+            color: pink;
+        }
+    }
+}
+
+

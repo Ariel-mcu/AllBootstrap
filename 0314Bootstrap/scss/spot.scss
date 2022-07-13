@@ -1,0 +1,68 @@
+.object-cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+article {
+    p{
+        line-height: 1.6;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.card-list{
+    a{
+        text-decoration: none;
+        color: #333;
+        &:hover{
+            color: #666;
+        }
+    }
+    
+}
+.header {
+    background: palegreen;
+}
+
+.nav {
+    background: pink;
+}
+
+.main {
+    /* background: lightblue; */
+}
+
+.item {
+    background: #fff;
+}
+
+.aside {
+    
+}
+
+.footer {
+    background: coral;
+}
+.sign-in-body{
+    background: url(/images/clouds-7050884_1920.jpg) center center;
+    background-size: cover;
+}
+.sign-in-panel{
+    width: 300px;
+    .sign-in-input{
+        .from-floating:first-child{
+            .from-control{
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom: none;
+            }
+            .from-floating:last-child{
+                .from-control{
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            
+        }
+    }
+}

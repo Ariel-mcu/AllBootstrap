@@ -1,0 +1,12 @@
+.primary {
+  color: lightblue;
+}
+
+.box h2 {
+  color: red;
+}
+
+.box h2:hover {
+  color: pink;
+}
+/*# sourceMappingURL=style.css.map */

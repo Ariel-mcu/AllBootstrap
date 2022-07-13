@@ -1,0 +1,18 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+// body{
+//     height: 300vh;
+// }
+header{
+    .form-control{
+        background: $gray-700;
+        border: none;
+    }
+}
+.dashboard-name{
+    text-decoration: none;
+    width: 260px;
+}

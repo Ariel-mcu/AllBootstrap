@@ -1,0 +1,294 @@
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+.slogan-1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.slogan-2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.38;
+}
+
+@media screen and (min-width: 768px) {
+  .slogan-2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 1.09;
+  }
+}
+
+.slogan-3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.14;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.btn.btn-primary {
+  color: #fff;
+}
+
+.btn.btn-primary:hover {
+  color: #fff;
+}
+
+.btn.btn-outline-primary {
+  background-color: #fff;
+  border-width: 3px;
+}
+
+.btn.btn-outline-primary:hover {
+  color: #6fb997;
+  border-color: #6fb997;
+}
+
+.mxw-300px {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+  .w-md-33 {
+    width: 33% !important;
+  }
+}
+
+.md-view {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .md-view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.object-cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-32.5%, #000000), color-stop(67.78%, rgba(84, 84, 84, 0.0001)));
+  background: linear-gradient(0deg, #000000 -32.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+}
+
+.mask:hover {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(-40.5%, #000000), color-stop(67.78%, rgba(84, 84, 84, 0.0001)));
+  background: linear-gradient(0deg, #000000 -40.5%, rgba(84, 84, 84, 0.0001) 67.78%);
+}
+
+body {
+  font-family: 'Raleway',sans-serif;
+  font-weight: 500;
+  background: #fff;
+}
+
+.header {
+  font-weight: 800;
+}
+
+@media screen and (min-width: 992px) {
+  .header .header-content {
+    max-width: 1600px;
+  }
+}
+
+.header li {
+  border-bottom: 5px solid #4BA87D;
+  margin-left: .5rem;
+}
+
+.header a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header a:hover {
+  color: #6fb997;
+}
+
+.logo:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 4.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .logo img {
+    width: 6.5rem;
+  }
+}
+
+.logo h4 {
+  font-weight: 900;
+}
+
+.logo h4:hover {
+  color: #000;
+}
+
+main::before {
+  content: "";
+  display: block;
+  height: 4.2rem;
+}
+
+@media screen and (min-width: 992px) {
+  main::before {
+    height: 6rem;
+  }
+}
+
+.section-1 {
+  background: #fff url(../img/bg/section1-bg.svg) center center no-repeat;
+  background-size: cover;
+  min-height: 28rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-1 {
+    min-height: unset;
+  }
+}
+
+.section-1-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-1-img {
+    width: 60%;
+  }
+}
+
+.section-1-img h1 {
+  width: 19.68rem;
+  top: 22%;
+  left: 42%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-1-img h1 {
+    width: 100%;
+    top: 35%;
+    left: -20%;
+    max-width: 350px;
+  }
+}
+
+.section-1-img .text-area {
+  max-width: 350px;
+}
+
+.section-1-img .text-area p {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-1-img .text-area {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 70%;
+    left: -20%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .section-1-img .text-area {
+    top: 70%;
+  }
+}
+
+.section-1-img .text-area button {
+  font-weight: 900;
+  width: 45%;
+}
+
+@media screen and (min-width: 992px) {
+  .section-1-img .slogan-1,
+  .section-1-img .text-area {
+    max-width: 500px;
+  }
+}
+
+.section-2 {
+  background: #fff url(../img/bg/section2-bg_m.svg) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .section-2 {
+    background: #fff url(../img/bg/section2-bg.svg) center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.footer {
+  font-weight: 700;
+}
+
+.footer .logo img {
+  width: 3.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .footer .logo img {
+    width: 5rem;
+  }
+}
+
+.footer .logo {
+  margin-left: -.5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+  padding-right: .4rem;
+}
+
+.footer a:hover {
+  color: #6fb997;
+}
+
+.footer .footer-right {
+  font-size: .8rem;
+}
+/*# sourceMappingURL=style.css.map */
